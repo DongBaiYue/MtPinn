@@ -1,0 +1,5 @@
+term,mtPinn,serial+FCFS,serial+QoS aware,parallel+FCFS
+equal,86.9,12.4,71,58.1
+short-skew,80.3,40.3,69.2,53.3
+middle-skew,87.2,30,68.1,63.1
+long-skew,90.9,60.1,78.8,75.3
