@@ -1,0 +1,9 @@
+run
+```
+# 评测、记录模型时延。用于时延预测
+python3 latency_evaluate.py
+# 产生多租户请求
+python3 request_producer.py
+# 服务运行
+python3 main.py
+```

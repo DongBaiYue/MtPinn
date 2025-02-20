@@ -1,4 +1,4 @@
-from utils import read_single_latencys
+from latency_evaluate import read_single_latencys
 
 class LatencyPredictor:
     def __init__(self, single_latencys_file_path:str):

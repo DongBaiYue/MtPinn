@@ -19,7 +19,7 @@ def read_single_latencys(single_latencys_file_path:str):
                     single_latencys[net_name][mpsList[i]] = latencys[i]
             linecount += 1
     return single_latencys
-def evaluete_single_model(workers_manager:WorkersManager, net_name, mps, iter_num):
+def evaluate_single_model(workers_manager:WorkersManager, net_name, mps, iter_num):
     print(net_name)
     print(mps)
     start_time = time.perf_counter()
@@ -39,7 +39,7 @@ def write_single_latencys(single_latencys_file_path:str):
     for net_name in net_names:
         latencys[net_name] = {}
         for mps in mpses:
-            latency = evaluete_single_model(workers_manager, net_name, mps, iter_num)
+            latency = evaluate_single_model(workers_manager, net_name, mps, iter_num)
             print(latency)
             latencys[net_name][mps] = round(latency, 2)
     #写入csv文件
